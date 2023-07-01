@@ -15,10 +15,8 @@ int main(){
     for (int i = 0; i < 20; i++){
         strcpy(C[i], A[i]);
     }
-    for (int j = 0; j < 30; j++){
-        for (int i = 20; i < 50; i++){
-            strcpy(C[i], B[j]);
-        }
+    for (int i = 0; i < 30; i++){
+        strcpy(C[i+20], B[i]);
     }
     printf("Os termos da matriz C são:\n");
     for (int i = 0; i < 50; i++){
